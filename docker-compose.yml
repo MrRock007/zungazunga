@@ -1,0 +1,6 @@
+services:
+  king:
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - '8000:80'

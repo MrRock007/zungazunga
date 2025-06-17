@@ -5,7 +5,7 @@ router = APIRouter()
 
 @router.get("/")
 def read_root():
-    return {"message": "Welcome to FastAPI!"}
+    return {"message": "Welcome to FastAPI from bluescript!"}
 
 @router.get("/items/{item_id}")
 def read_item(item_id: int, q: str = None):

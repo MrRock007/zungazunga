@@ -34,7 +34,7 @@ jobs:
             script: |
                 sudo docker pull ${{ vars.DOCKER_USERNAME }}/santana
                 sudo docker rm -f santana
-                sudo docker run --name=santana -p 80:80 -d ${{ vars.DOCKER_USERNAME }}/santana
+                sudo docker run --name=santana -p 8000:80 -d ${{ vars.DOCKER_USERNAME }}/santana
 
 
 
